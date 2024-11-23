@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="https://www.google.com/" method="get">
+    <caption>
+        <H2>Market Research Suvey</H2>
+        <H4>Please take a few moments to complete this satisfaction survey </H4>
+    </caption><hr>
+    <label for="age"><strong>What is your age range?</strong></label><br>
+    <select name="age" id="age" >
+        <option value="1">0-17</option>
+        <option selected value="2">18-24</option>
+        <option value="3">25-40</option>
+        <option value="4">40-</option>
+    </select><br>
+
+    <input type="hidden" name="" id=""><br>
+    <!-- thac mac.dung hidden co chinh xac khong -->
+
+    <label for="cass"><strong>What is your yearly income range?</strong></label><br>
+    <select name="cass" id="cass" >
+        <option selected  value="5">$0-$25,000</option>
+        <option value="6">$26,000-$50,000</option>
+        <option value="7">$51,000-$100,000</option>
+        <option value="8">$101,000-$1,000,000</option>
+    </select><br>
+
+    <input type="hidden" name="" id=""><br>
+    <!-- thac mac.dung hidden co chinh xac khong -->
+
+    <label for="sex"><strong>Gender Identily</strong></label><br>
+    <input type="radio" name="sex" id="Male"><label for="Male">Male</label><br>
+    <input type="radio" name="sex" id="Female"><label for="Female">Female</label> <br>
+    <input type="radio" name="sex" id="Nonbinary"><label for="Nonbinary">Nonbinary</label><br>
+    <input type="radio" name="sex" id="Other"><label for="Other">Other</label><br>
+    <!-- trong trường hợp trên,cả cụm thẻ label phía sau là giá trị của thẻ radio phía trước
+     khi đặt ID của thẻ radio phía trước trùng với for của label và từ hiển thị(3 trùng lặp)
+     thì sẽ được kết quả là kể cả ấn vào ô hay chữ đều sẽ bôi đen được ô.
+     phía dưới giống vậy -->
+
+    <input type="hidden"><br>   
+    <!-- thac mac.dung hidden co chinh xac khong -->
+
+    <label for="Products"><strong>Which of the following products have your purchased in the last 2 months.Please check all that apply.</strong></label><br>
+    <input type="checkbox" name="products" id="products 1"><label for="products 1">Product 1 </label><br>
+    <input type="checkbox" name="products" id="products 2"><label for="products 2">Product 2 </label><br>
+    <input type="checkbox" name="products" id="products 3"><label for="products 3">Product 3 </label><br>
+
+    <input type="hidden" name="" id=""><br>
+    <!-- thac mac.dung hidden co chinh xac khong -->
+
+    <label for="when"><strong>How often would you use our new Product?</strong></label><br>
+    <input type="radio" name="when" id="when">Daily <br>
+    <input type="radio" name="when" id="when">Weekly <br>
+    <input type="radio" name="when" id="when">Monthly <br>
+
+    <input type="hidden" name="" id=""><br>
+    <!-- thac mac.dung hidden co chinh xac khong -->
+    
+    <label for="pay"><strong>What would you pay for the new product></strong></label><br>
+    <table>
+        <tr>
+            <td>$</td>
+            <td><input type="text"></td>
+            <td>・</td>
+            <td><input type="text" ></td>
+            <!-- thắc mắc làm thế nào để làm ngắn lại độ dài của ô -->
+        </tr>
+        <tr>
+            <td></td>
+            <td>Dollars</td>
+            <td></td>
+            <td>Cents</td>
+        </tr>
+    </table> 
+
+   <input type="hidden" name="" id=""><br>
+   <!-- thac mac.dung hidden co chinh xac khong -->
+
+
+    <label for="comment"><strong>What features would you like to see in the new product.</strong></label><br>
+    <textarea name="comment" id="comment" rows="10" cols="100"></textarea><br>
+    <input type="hidden" name="" id=""><br>
+    <input type="hidden" name="" id="">
+
+    <p>Please rate your level of agreement with the following statements.</p>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th></th>
+            <th>Strongly Disagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly Agree</th>
+        </tr>
+        <tr>
+            <td><strong>Our products are priced fairty</strong></td>
+            <td><table>
+                <tr>
+                    <center>〇</center>
+                    <center>1</center>
+                </tr>
+            </table></td>
+            <td><table>
+                <tr>
+                    <center>〇</center>
+                    <center>2</center>
+                </tr>
+            </table></td>
+            <td><table>
+                <tr>
+                    <center>〇</center>
+                    <center>3</center>
+                </tr>
+            </table></td>
+            <td><table>
+                <tr>
+                    <center>〇</center>
+                    <center>4</center>
+                </tr>
+            </table></td>
+        </tr>
+        <tr>
+            <td><strong>Our product are pricad fairly.</strong></td>
+            <td><table>
+                <tr>
+                    <center>〇</center>
+                    <center>1</center>
+                </tr>
+            </table></td>
+            <td><table>
+                <tr>
+                    <center>〇</center>
+                    <center>2</center>
+                </tr>
+            </table></td>
+            <td><table>
+                <tr>
+                    <center>〇</center>
+                    <center>3</center>
+                </tr>
+            </table></td>
+            <td><table>
+                <tr>
+                    <center>〇</center>
+                    <center>4</center>
+                </tr>
+            </table></td> 
+        </tr>
+        <tr>
+            <td><strong>You would recommend our product to a friend or coworker.</strong></td>
+            <!-- thắc mắc làm thế nào để chỉnh độ rộng của dòng để chữ tự động xuống dưới nếu ko đủ chỗ -->
+            <td><table>
+                <tr>
+                    <center>〇</center>
+                    <center>1</center>
+                </tr>
+            </table></td>
+            <td><table>
+                <tr>
+                    <center>〇</center>
+                    <center>2</center>
+                </tr>
+            </table></td>
+            <td><table>
+                <tr>
+                    <center>〇</center>
+                    <center>3</center>
+                </tr>
+            </table></td>
+            <td><table>
+                <tr>
+                    <center>〇</center>
+                    <center>4</center>
+                </tr>
+            </table></td>
+        </tr>
+    </table><br>
+<!-- thắc mắc làm thế nào để chỉnh độ rộng của cột bằng nhau -->
+
+
+    <input type="hidden" name="" id=""><br>
+    <input type="submit" value="Submit" id="">
+
+    
+
+
+
+</form>
+</body>
+</html>
